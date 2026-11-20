@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-05",
+  "verification_scope": "Initial local preset captured 2026-09-05; not a live entitlement, billing guarantee or model benchmark. Choose explicit available models appropriate to the task.",
+  "runtime_observations": {
+    "codex_version": "0.153.2",
+    "claude_code_version": "2.1.261"
+  },
+  "models": [
+    {
+      "id": "gpt-6-astra",
+      "provider": "openai",
+      "roles": [
+        "optional_root_preset"
+      ],
+      "effort_values_observed_in_local_codex": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "effort_guidance": "Preserve explicit choices; choose effort by task difficulty and observed results.",
+      "minimum_cli_version": null,
+      "entitlement_status": "unverified_for_future_invocation"
+    },
+    {
+      "id": "claude-fable-5-1",
+      "provider": "anthropic",
+      "roles": [
+        "optional_execution_preset"
+      ],
+      "claude_code_minimum_version": "2.1.255",
+      "claude_code_effort_values_documented": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "effort_guidance": "Preserve explicit choices; choose effort by task difficulty and observed results.",
+      "entitlement_status": "unverified_for_current_account"
+    },
+    {
+      "id": "claude-opus-5",
+      "provider": "anthropic",
+      "roles": [
+        "optional_execution_preset"
+      ],
+      "claude_code_minimum_version": "2.1.219",
+      "claude_code_effort_values_documented": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "effort_guidance": "Preserve explicit choices; choose effort by task difficulty and observed results.",
+      "entitlement_status": "unverified_for_current_account"
+    },
+    {
+      "id": "claude-sonnet-5",
+      "provider": "anthropic",
+      "roles": [
+        "optional_execution_preset"
+      ],
+      "claude_code_minimum_version": "2.1.197",
+      "claude_code_effort_values_documented": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "effort_guidance": "Preserve explicit choices; choose effort by task difficulty and observed results.",
+      "entitlement_status": "unverified_for_current_account"
+    }
+  ],
+  "resource_policy": {
+    "claude_schedulable_pools": "The currently authenticated account only.",
+    "automatic_account_switching": false,
+    "credential_manipulation": false,
+    "paid_overflow_authorized_by_default": false,
+    "live_quota_status": "unknown_until_observed",
+    "budget_scope": "Honor explicit user constraints across descendants; no local budget manager.",
+    "headless_billing_caveat": "Native Claude metering applies. The helper does not enable extra usage or guarantee subscription-only billing."
+  },
+  "receipt_guidance": {
+    "record_when_available": [
+      "requested_model",
+      "observed_model",
+      "requested_effort",
+      "observed_effort",
+      "runtime_version",
+      "authentication_mode",
+      "billing_route",
+      "quota_observed_at",
+      "quota_reset_at"
+    ],
+    "unknown_values": "Keep unknown; never fill observed fields from requested values or infer current access from public entitlement.",
+    "effort_portability": "Names are runtime-specific and do not establish cross-provider equivalence. ultracode is workflow orchestration, not an ordinary effort value."
+  }
+}

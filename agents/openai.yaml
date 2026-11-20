@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrator"
+  short_description: "Coordinate autonomous Codex and Claude leads"
+  default_prompt: "Use $orchestrator to coordinate this task with autonomous leads and verifiable acceptance."
