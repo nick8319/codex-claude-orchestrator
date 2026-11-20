@@ -10,7 +10,7 @@ Use it when you already work with both tools and want to stop copying assignment
 
 - The code and documentation were written by coding agents (Claude Code and Codex) under the author's direction. The author set the requirements, the review gates and the release criteria, and decided what shipped; he did not write the code by hand.
 - First public release. Before this it ran on one machine, for one user.
-- macOS only. The CI workflow has not yet run on a hosted runner; the test results quoted here are local.
+- macOS only. CI runs the same checks on hosted macOS runners with Python 3.11 and 3.14.
 - Headless launch does not work out of the box today: it accepts only Claude Code 2.1.261, the one version it was tested against, and the default billing policy blocks every launch (see [Optional headless worker](#optional-headless-worker)). Peer messaging between live sessions is the part that was exercised.
 
 ## Documents
